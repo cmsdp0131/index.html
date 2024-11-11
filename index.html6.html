@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .form-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="form-heading">Robotics Club Registration Form</h1>
+    <p>Please fill in the form below to join the Robotics Club. We look forward to having you on our team!</p>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input type="number" class="form-control" id="age" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" required>
+      </div>
+      <div class="mb-3">
+        <label for="topics" class="form-label">Topics of Interest</label><br>
+        <input type="checkbox" id="topic1" value="Robotics Design">
+        <label for="topic1">Robotics Design</label><br>
+        <input type="checkbox" id="topic2" value="Programming">
+        <label for="topic2">Programming</label><br>
+        <input type="checkbox" id="topic3" value="Electronics">
+        <label for="topic3">Electronics</label><br>
+        <input type="checkbox" id="topic4" value="Mechanical Engineering">
+        <label for="topic4">Mechanical Engineering</label><br>
+      </div>
+      <div class="mb-3">
+        <label for="level" class="form-label">Level of Experience</label><br>
+        <input type="radio" id="beginner" name="level" value="Beginner" required>
+        <label for="beginner">Beginner</label><br>
+        <input type="radio" id="intermediate" name="level" value="Intermediate" required>
+        <label for="intermediate">Intermediate</label><br>
+        <input type="radio" id="advanced" name="level" value="Advanced" required>
+        <label for="advanced">Advanced</label>
+      </div>
+      <div class="mb-3">
+        <label for="projects" class="form-label">Projects of Interest</label>
+        <select class="form-control" id="projects">
+          <option>Autonomous Robots</option>
+          <option>Robotic Arms</option>
+          <option>Drones</option>
+          <option>AI Integration</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="reason" class="form-label">Reason for Joining</label>
+        <textarea class="form-control" id="reason" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <p>For more resources on robotics, visit our <a href="https://www.example.com/resources">resource page</a>.</p>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
